@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Notas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aluno</th>
+      <th>Trabalho</th>
+      <th>Prova</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notas.each do |nota| %>
+      <tr>
+        <td><%= nota.aluno %></td>
+        <td><%= nota.trabalho %></td>
+        <td><%= nota.prova %></td>
+        <td><%= link_to 'Show', nota %></td>
+        <td><%= link_to 'Edit', edit_nota_path(nota) %></td>
+        <td><%= link_to 'Destroy', nota, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nota', new_nota_path %>

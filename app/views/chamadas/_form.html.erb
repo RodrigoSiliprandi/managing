@@ -1,0 +1,42 @@
+<%= form_with(model: chamada, local: true) do |form| %>
+  <% if chamada.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chamada.errors.count, "error") %> prohibited this chamada from being saved:</h2>
+
+      <ul>
+      <% chamada.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :curso_id %>
+    <%= form.text_field :curso_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disciplina_id %>
+    <%= form.text_field :disciplina_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aluno_id %>
+    <%= form.text_field :aluno_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :presenca %>
+    <%= form.check_box :presenca %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

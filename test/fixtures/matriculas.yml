@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aluno: one
+  disciplina: one
+  periodo: MyString
+
+two:
+  aluno: two
+  disciplina: two
+  periodo: MyString

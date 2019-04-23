@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aluno:</strong>
+  <%= @matricula.aluno %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @matricula.disciplina %>
+</p>
+
+<p>
+  <strong>Periodo:</strong>
+  <%= @matricula.periodo %>
+</p>
+
+<%= link_to 'Edit', edit_matricula_path(@matricula) %> |
+<%= link_to 'Back', matriculas_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aluno: one
+  trabalho: one
+  prova: one
+
+two:
+  aluno: two
+  trabalho: two
+  prova: two

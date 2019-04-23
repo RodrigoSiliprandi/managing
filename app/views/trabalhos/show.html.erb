@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data de entrega:</strong>
+  <%= @trabalho.data_de_entrega %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @trabalho.descricao %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @trabalho.disciplina %>
+</p>
+
+<%= link_to 'Edit', edit_trabalho_path(@trabalho) %> |
+<%= link_to 'Back', trabalhos_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  curso: one
+  disciplina: one
+  aluno: one
+  data: 2019-04-23
+  presenca: false
+
+two:
+  curso: two
+  disciplina: two
+  aluno: two
+  data: 2019-04-23
+  presenca: false

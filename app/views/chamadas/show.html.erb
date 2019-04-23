@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @chamada.curso %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @chamada.disciplina %>
+</p>
+
+<p>
+  <strong>Aluno:</strong>
+  <%= @chamada.aluno %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @chamada.data %>
+</p>
+
+<p>
+  <strong>Presenca:</strong>
+  <%= @chamada.presenca %>
+</p>
+
+<%= link_to 'Edit', edit_chamada_path(@chamada) %> |
+<%= link_to 'Back', chamadas_path %>
